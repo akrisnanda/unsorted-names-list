@@ -24,11 +24,13 @@ function genString($arr){
 	}
 }
 
+// get the last name and put in the array
 foreach($name as $key=>$row){
 	$pecah = explode(" ",$row);
 	$new_name[$pecah[count($pecah)-1]] = $row;
 }
 
+// sort asc by key of array
 ksort($new_name);
 
 echo "<b>Input: </b><br/>";
